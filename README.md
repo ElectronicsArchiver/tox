@@ -29,3 +29,4 @@ that are at least 40% similar.
 ## Model Development
 
 The model folder contains Jupyter notebooks used in the process of developing our ToxIN model.
+The ToxIBTL folder contains original code from [ToxIBTL](https://github.com/WLYLab/ToxIBTL).
