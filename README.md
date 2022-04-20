@@ -11,14 +11,20 @@ To get your local environment set up, run the following commands:
 
 ## Data
 
-The data folder contains data from previous papers, including ToxIBTL, ToxinPred, and NNTox.
-Note that NNTox is not ccurently being used.
+The data folder contains data from previous papers, including ToxIBTL, ToxDL, and ToxinPred.
 
 ## EDA
 
 The eda folder contains Python files that conduct exploratory data analysis. This includes the reading in and wrangling
 of data into a standard format (i.e. sequence and toxic/non-toxic), identification of duplicate sequences, analysis of
 sequence similarity, and the division of the data into training and test sets.
+
+## CDHIT
+
+The cdhit folder contains data related to
+[CD-HIT](http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit), which we use to determine sequences
+that are at least 40% similar.
+
 
 ## Model Development
 

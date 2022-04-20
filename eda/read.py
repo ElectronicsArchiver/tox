@@ -1,4 +1,6 @@
 from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
 
 ########## TOXIBTL ##########
 toxibtlPosSeqs = set()
@@ -133,3 +135,15 @@ for seq in toxdlNegSeqs:
 print(len(toxdlPosNotInIBTL))
 print(len(toxdlNegNotInIBTL))
 # CONCLUSION: toxindl dataset contains sequences NOT in the ToxIBTL dataset
+
+########## WRITE TO FASTA FILE ##########
+
+posSeqs = list(toxibtlPosSeqs.union(toxinpredPosSeqs).union(toxdlPosSeqs))
+negSeqs = list(toxibtlNegSeqs.union(toxinpredNegSeqs).union(toxdlNegSeqs))
+posSeqs = [SeqRecord(Seq(seq), id=str(i)) for i, seq in enumerate(posSeqs)]
+negSeqs = [SeqRecord(Seq(seq), id=str(i)) for i, seq in enumerate(negSeqs)]
+
+with open("../cdhit/input/posSeqs.fasta", "w") as f:
+    SeqIO.write(posSeqs, f, "fasta")
+with open("../cdhit/input/negSeqs.fasta", "w") as f:
+    SeqIO.write(negSeqs, f, "fasta")
