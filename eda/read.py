@@ -138,12 +138,14 @@ print(len(toxdlNegNotInIBTL))
 
 ########## WRITE TO FASTA FILE ##########
 
-posSeqs = list(toxibtlPosSeqs.union(toxinpredPosSeqs).union(toxdlPosSeqs))
-negSeqs = list(toxibtlNegSeqs.union(toxinpredNegSeqs).union(toxdlNegSeqs))
+posSeqs = set(toxibtlPosSeqs.union(toxinpredPosSeqs).union(toxdlPosSeqs))
+negSeqs = set(toxibtlNegSeqs.union(toxinpredNegSeqs).union(toxdlNegSeqs))
 posSeqs = [SeqRecord(Seq(seq), id=str(i)) for i, seq in enumerate(posSeqs)]
 negSeqs = [SeqRecord(Seq(seq), id=str(i)) for i, seq in enumerate(negSeqs)]
 
-with open("../cdhit/input/posSeqs.fasta", "w") as f:
-    SeqIO.write(posSeqs, f, "fasta")
-with open("../cdhit/input/negSeqs.fasta", "w") as f:
-    SeqIO.write(negSeqs, f, "fasta")
+print(len(posSeqs))
+
+# with open("../cdhit/input/posSeqs.fasta", "w") as f:
+#     SeqIO.write(posSeqs, f, "fasta")
+# with open("../cdhit/input/negSeqs.fasta", "w") as f:
+#     SeqIO.write(negSeqs, f, "fasta")
