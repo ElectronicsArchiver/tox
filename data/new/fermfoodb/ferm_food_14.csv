@@ -1,0 +1,4 @@
+"FMDB_ID","PubMed ID","Reference","Title","Peptide_Sequence","Sequence","Length of peptide","Food_Matrix","Protein","pH","Temperature","Incubation Time","Activity","Experiment","Model","Assay for Activity Measurement","Culture","Hydrolysis","Method of analysis","M_Z ratio","Mass","IC50"
+"FMDB1","18521593","NA","NA","DP","DP","2","Acetes chinensis (shrimp sp. )","Marine Protein","6.12","38.10°C","24.19 h","Ace-inhibitory","NA","NA","NA","Lactobacillus fermentum SM 605","Proteases","LC-MS","NA","NA","2.15±0.02 uM"
+"FMDB2","18521593","NA","NA","GTG","GTG","3","Acetes chinensis (shrimp sp. )","Marine Protein","6.12","38.10°C","24.19 h","Ace-inhibitory","NA","NA","NA","Lactobacillus fermentum SM 605","Proteases","LC-MS","NA","NA","5.54±0.09uM"
+"FMDB3","18521593","NA","NA","ST","ST","2","Acetes chinensis (shrimp sp. )","Marine Protein","6.12","38.10°C","24.19 h","Ace-inhibitory","NA","NA","NA","Lactobacillus fermentum SM 605","Proteases","LC-MS","NA","NA","4.03±0.1uM"
