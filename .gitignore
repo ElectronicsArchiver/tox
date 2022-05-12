@@ -1,3 +1,4 @@
 .idea/
 */.ipynb_checkpoints/*
 data/new/.ipynb_checkpoints/*
+model/ToxIBTL/.ipynb_checkpoints/*

@@ -8,6 +8,9 @@ To get your local environment set up, run the following commands:
 * `conda create -n tox python=3.9`
 * `conda activate tox`
 * `conda install -c conda-forge biopython`
+* `conda install -c pytorch pytorch`
+* `conda install scikit-learn`
+* 
 
 To make the conda environment available in Jupyter notebook, run the following:
 * `conda install -c anaconda ipykernel`
