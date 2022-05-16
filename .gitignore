@@ -2,3 +2,10 @@
 */.ipynb_checkpoints/*
 data/new/.ipynb_checkpoints/*
 model/ToxIBTL/.ipynb_checkpoints/*
+tmp
+AllDB
+ClustDB
+ClustDBSeqs*
+allseqs.fasta
+ClustDBSeqs.fasta
+.ipynb_checkpoints
