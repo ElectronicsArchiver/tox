@@ -17,7 +17,9 @@ Output files will be stored in the output directory. To extract the embedding fr
 
 > embedding = t['mean_representations'][33]
 
-Note: The embedding will be a tensor of dimension 1280. 
+Note: 
+1. The embedding will be a tensor of dimension 1280. 
+2. The script will generate a copy of the input fasta file with sequences captialized, since this format is required for processing.
 
 # testESM
 Testing the FB embedding generator. 
