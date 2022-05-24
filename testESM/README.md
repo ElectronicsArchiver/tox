@@ -3,6 +3,7 @@
 First, make sure you have pytorch and fair-esm installed. You can either install them directly or use the pipenv file (instructions in testESM)
 To install directly: 
 > pip install fair-esm
+
 > pip install torch torchvision
 
 Once you have the packages installed, call extract.py to produce embeddings:
@@ -13,6 +14,7 @@ Example:
 
 Output files will be stored in the output directory. To extract the embedding from a file, run:
 > t = torch.load('/data/final_sample_embeddings/UniRef50_A0A1D5ZRM3.pt')
+
 > embedding = t['mean_representations'][33]
 
 Note: The embedding will be a tensor of dimension 1280. 
