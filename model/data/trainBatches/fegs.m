@@ -1,4 +1,5 @@
 addpath '/Users/kevinlin/Documents/classes/cs272/tox/model/FEGS/'
+
 parpool('local', 4);
 
 parfor (c=5134:36969, 4)
