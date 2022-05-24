@@ -3,9 +3,11 @@ parpool('local', 4);
 
 parfor (c=5134:36969, 4)
     file = strcat('trainBatch', num2str(c))
-    mat = FEGS(file);
-    parsave(strcat('trainBatch', num2str(c), '.mat'), mat)
-%     save(strcat('trainBatch', num2str(c), '.mat'), 'mat')
+    matfile = strcat('trainBatch', num2str(c), '.mat')
+    if not(exists(matfile))
+        mat = FEGS(file);
+        parsave(matfile, mat)
+    end
 end
 
 function parsave(fname, mat)
