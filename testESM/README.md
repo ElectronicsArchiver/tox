@@ -22,7 +22,7 @@ Note:
 2. The script will generate a copy of the input fasta file with sequences captialized, since this format is required for processing.
 
 # testESM
-Testing the FB embedding generator. 
+Testing the FB embedding generator.
 
 # Instructions:
 In order to test the FB embedding generator, make sure you're in the testESM directory. 
