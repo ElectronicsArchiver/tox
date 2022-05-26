@@ -1,7 +1,14 @@
-function FEGS(data)
-[P,V]=coordinate;
+function FEGS(filenum, chunkdir)
 
-s = fastaread(strcat('chunks/', num2str(data), '.fasta'));
+filename = strcat(num2str(chunkdir), num2str(filenum), '.fasta');
+outfile = strcat(num2str(chunkdir), num2str(filenum), '.mat');
+
+if isfile(outfile) || ~isfile(filename)
+    return
+end
+
+[P,V]=coordinate;
+s = fastaread(filename);
 data={s(:).Sequence};
 l=length(data);
 char='ARNDCQEGHILKMFPSTWYV';
@@ -17,4 +24,4 @@ for i=1:l
 end
 
 FV=[EL FA FD];
-save(strcat('chunks/', num2str(data), '.mat'), FV);
+save(outfile, FV);
