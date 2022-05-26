@@ -24,4 +24,4 @@ for i=1:l
 end
 
 FV=[EL FA FD];
-save(outfile, FV);
+save(outfile, 'FV');
