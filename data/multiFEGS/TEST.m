@@ -1,4 +1,4 @@
 tic
-FEGS('1');
+FEGS('data');
 toc
 % save('data_res', data_res);

@@ -14,5 +14,3 @@ if len_seq~=1
 else
      DPC=zeros(20,20);
 end
-
-

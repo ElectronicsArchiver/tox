@@ -2,8 +2,11 @@ function g=GRS(seq,P,V)
 load M
 l_seq=length(seq);
 k=size(M,1);
+cha='ACDEFGHIKLMNPQRSTVWY';
 for j=1:k
+    DPC=zeros(20,20);
     c{1}=[0 0 0];
+    c = cell(l_seq + 1, l_seq + 1);
     d=zeros(1,3);
     for i=1:l_seq
         if i==1
