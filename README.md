@@ -16,24 +16,57 @@ To make the conda environment available in Jupyter notebook, run the following:
 * `conda install -c anaconda ipykernel`
 * `python -m ipykernel install --user --name=tox`
 
-## Data
+<br>
+<br>
 
-The data folder contains data from previous papers, including ToxIBTL, ToxDL, and ToxinPred.
+## Files
 
-## EDA
+<br>
 
-The eda folder contains Python files that conduct exploratory data analysis. This includes the reading in and wrangling
-of data into a standard format (i.e. sequence and toxic/non-toxic), identification of duplicate sequences, analysis of
-sequence similarity, and the division of the data into training and test sets.
+[![Button Data]][Data] 
 
-## CDHIT
+    *Contains data from previous papers,* <br>
+    *including **ToxIBTL**, **ToxDL** & **ToxinPred**.*
 
-The cdhit folder contains data related to
-[CD-HIT](http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit), which we use to determine sequences
-that are at least 40% similar.
+<br>
+
+[![Button EDA]][EDA] 
+
+    *Contains Python files for exploratory data analysis.*
+ 
+    *This includes the reading in and wrangling of data into* <br>
+    *a standard format ( sequences and toxic / non-toxic ),* <br>
+    *identification of duplicate sequences, division of data* <br>
+    *into training and test, as well as analysis of sequence* <br>
+    *similarity.* 
+    
+<br>
+
+[![Button CDHIT]][CDHIT] 
+
+    *Contains data related to **[CD-HIT]**, which we use to* <br>
+    *determine sequences that are at least `40%` similar.*
+
+<br>
+
+[![Button Model]][Model] 
+
+    *Contains Jupyter notebooks used in the* <br>
+    *process of developing our **ToxIN** model.*
+    
+    *The `/ToxIBTL/` folder contains* <br>
+    *original code from **[ToxIBTL]**.*
 
 
-## Model Development
+[ToxIBTL]: https://github.com/WLYLab/ToxIBTL
+[CD-HIT]: http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit
 
-The model folder contains Jupyter notebooks used in the process of developing our ToxIN model.
-The ToxIBTL folder contains original code from [ToxIBTL](https://github.com/WLYLab/ToxIBTL).
+[CDHIT]: cdhit
+[Model]: model
+[Data]: data
+[EDA]: eda
+
+[Button Model]: https://img.shields.io/badge/\/Model\/-F46D01?style=for-the-badge
+[Button CDHIT]: https://img.shields.io/badge/\/CDHIT\/-EF2D5E?style=for-the-badge
+[Button Data]: https://img.shields.io/badge/\/Data\/-008FC7?style=for-the-badge
+[Button EDA]: https://img.shields.io/badge/\/EDA\/-00A98F?style=for-the-badge
