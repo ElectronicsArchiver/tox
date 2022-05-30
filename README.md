@@ -1,11 +1,16 @@
 
+<div align = center>
+
 # TOX
 
-Final Project for CS272: Introduction to Biomedical Informatics Research Methodology at Stanford University
+*Final Project for **CS272**.*
+
+*Introduction to Biomedical Informatics Research* <br>
+*Methodology at **Stanford University**.*
 
 <br>
+<br>
 
-<div align = center>
 
 ## Team
 
