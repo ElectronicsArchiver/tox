@@ -15,6 +15,7 @@ def main():
 def run_command(batch):
     for file in batch:
         outdir = Path(f"test-embeds/{file.stem}")
+        print(f"Running {file.name} ...")
         outdir.mkdir(exist_ok=True)
         pipe = subprocess.Popen(f"python extract.py esm1b_t33_650M_UR50S {file} {outdir} --include mean".split())
         pipe.wait()
