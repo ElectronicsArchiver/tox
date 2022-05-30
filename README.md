@@ -14,17 +14,49 @@ Final Project for CS272: Introduction to Biomedical Informatics Research Methodo
 
 <br>
 
-To get your local environment set up, run the following commands:
-* `conda create -n tox python=3.9`
-* `conda activate tox`
-* `conda install -c conda-forge biopython`
-* `conda install -c pytorch pytorch`
-* `conda install scikit-learn`
-* 
+## Setup
 
-To make the conda environment available in Jupyter notebook, run the following:
-* `conda install -c anaconda ipykernel`
-* `python -m ipykernel install --user --name=tox`
+*Configuring your system for the project.*
+
+<br>
+
+### Conda Environment
+
+*Preparing the local environment.*
+
+1.  ```sh
+    conda create -n tox python=3.9
+    ```
+    
+2.  ```sh
+    conda activate tox
+    ```
+    
+3.  ```sh
+    conda install -c conda-forge biopython
+    ```
+    
+4.  ```sh
+    conda install -c pytorch pytorch
+    ```
+
+5.  ```sh
+    conda install scikit-learn
+    ```
+
+<br>
+
+## Jupyter Notebook
+
+*Making Conda available in Jupyter.*
+
+1.  ```sh
+    conda install -c anaconda ipykernel
+    ```
+    
+2.  ```sh
+    python -m ipykernel install --user --name=tox
+    ```
 
 <br>
 <br>
