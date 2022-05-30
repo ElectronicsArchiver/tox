@@ -12,26 +12,21 @@ def main():
     else:
         print("Please specify test or train.")
 
-def run_command(batch):
-    for file in batch:
-        outdir = Path(f"test-embeds/{file.stem}")
-        print(f"Running {file.name} ...")
-        outdir.mkdir(exist_ok=True)
-        pipe = subprocess.Popen(f"python extract.py esm1b_t33_650M_UR50S {file} {outdir} --include mean".split())
-        pipe.wait()
+def run_command(file):
+    outdir = Path(f"test-embeds/{file.stem}")
+    print(f"Running {file.name} ...")
+    outdir.mkdir(exist_ok=True)
+    pipe = subprocess.Popen(f"python extract.py esm1b_t33_650M_UR50S {file} {outdir} --include mean".split())
+    pipe.wait()
 
 def run_test():
     print("Running test directories...")
     test_dir = Path('test-chunks')
     test_files = check_dirs(test_dir)
     print(f"Test files remaining: {len(test_files)} ...")
-    batch_size = 5
-    batches = []
-    for i in range(0, len(test_files), batch_size):
-        batches.append(test_files[i : i + batch_size])
     processes = 6
     with Pool(processes) as p:
-        p.map(run_command, batches)
+        p.map(run_command, test_files)
 
 def run_train():
     train_dir = Path('train-chunks')
