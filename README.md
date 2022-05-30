@@ -5,13 +5,19 @@ Final Project for CS272: Introduction to Biomedical Informatics Research Methodo
 
 <br>
 
+<div align = center>
+
 ## Team
 
 <kbd> Ayush </kbd> 
 <kbd> Kevin </kbd> 
 <kbd> Shreyas </kbd> 
 <kbd> Tom </kbd>
+    
+</div>
 
+<br>
+<br>
 <br>
 
 ## Setup
@@ -23,6 +29,8 @@ Final Project for CS272: Introduction to Biomedical Informatics Research Methodo
 ### Conda Environment
 
 *Preparing the local environment.*
+
+<br>
 
 1.  ```sh
     conda create -n tox python=3.9
@@ -50,6 +58,8 @@ Final Project for CS272: Introduction to Biomedical Informatics Research Methodo
 
 *Making Conda available in Jupyter.*
 
+<br>
+
 1.  ```sh
     conda install -c anaconda ipykernel
     ```
@@ -58,6 +68,7 @@ Final Project for CS272: Introduction to Biomedical Informatics Research Methodo
     python -m ipykernel install --user --name=tox
     ```
 
+<br>
 <br>
 <br>
 
