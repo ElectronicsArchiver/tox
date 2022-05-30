@@ -50,7 +50,7 @@ def check_dirs_train(dir):
                 for x in output_dirs_files:
                     x.unlink()
                 output_dirs[i].rmdir()
-        return filtered_files
+    return filtered_files
         
 def check_dirs_test(dir):
     files = [x for x in dir.iterdir() if x.is_file() and x.suffix == '.fasta']
