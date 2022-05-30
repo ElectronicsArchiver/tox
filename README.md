@@ -1,8 +1,18 @@
+
 # TOX
 
 Final Project for CS272: Introduction to Biomedical Informatics Research Methodology at Stanford University
 
-Team: Ayush, Kevin, Shreyas, Tom
+<br>
+
+## Team
+
+<kbd> Ayush </kbd> 
+<kbd> Kevin </kbd> 
+<kbd> Shreyas </kbd> 
+<kbd> Tom </kbd>
+
+<br>
 
 To get your local environment set up, run the following commands:
 * `conda create -n tox python=3.9`
@@ -57,14 +67,24 @@ To make the conda environment available in Jupyter notebook, run the following:
     *The `/ToxIBTL/` folder contains* <br>
     *original code from **[ToxIBTL]**.*
 
+<br>
+
+
+<!----------------------------------------------------------------------------->
 
 [ToxIBTL]: https://github.com/WLYLab/ToxIBTL
 [CD-HIT]: http://weizhong-lab.ucsd.edu/cdhit_suite/cgi-bin/index.cgi?cmd=cd-hit
+
+
+<!---------------------------------{ Folders }--------------------------------->
 
 [CDHIT]: cdhit
 [Model]: model
 [Data]: data
 [EDA]: eda
+
+
+<!---------------------------------{ Buttons }--------------------------------->
 
 [Button Model]: https://img.shields.io/badge/\/Model\/-F46D01?style=for-the-badge
 [Button CDHIT]: https://img.shields.io/badge/\/CDHIT\/-EF2D5E?style=for-the-badge
